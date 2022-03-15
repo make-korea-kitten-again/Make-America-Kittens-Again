@@ -17,42 +17,7 @@ var blacklist = ["trump", "трамп", "トランプ", "pbs.twimg.com/profile_i
 // get additional settings from chrome storage
 
 chrome.storage.local.get({
-    blockPence: false,
-    blockFarage: false,
-    blockLePen: false,
-    blockWilders: false,
-    blockBannon: false,
-    blockBoris: false,
-    customBlock: false
 }, function (items) {
-    if (items.blockPence) {
-        blacklist.push("mike pence");
-        blacklist.push("ペンス");
-    }
-    if (items.blockFarage) {
-        blacklist.push("farage");
-    }
-    if (items.blockLePen) {
-        blacklist.push("le pen");
-    }
-    if (items.blockWilders) {
-        blacklist.push("wilders");
-    }
-    if (items.blockBannon) {
-        blacklist.push("bannon");
-    }
-    if (items.blockBoris) {
-        blacklist.push("boris johnson");
-    }
-    // process custom blocklist
-
-    if (items.customBlock) {
-        var customBlockTargets = items.customBlock.split(',');
-        customBlockTargets.forEach(function (blockTarget) {
-            blacklist.push(blockTarget.trim().toLowerCase())
-        });
-    }
-
     document.addEventListener('DOMContentLoaded', makanow(theKittens), false);
 });
 
@@ -440,7 +405,7 @@ if (window.location.href.indexOf('twitter.com') != -1) {
         // console.log('handler!');
         $(this).unbind('DOMSubtreeModified.event1');
         setTimeout(function () {
-            console.log('do maka now in event - timeout');
+            // console.log('do maka now in event - timeout');
             makanow(theKittens);
             $('body').bind('DOMSubtreeModified.event1', DOMModificationHandler);
         }, 500);
