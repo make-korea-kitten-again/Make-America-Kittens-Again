@@ -1,10 +1,18 @@
-# Make-America-Kittens-Again
+# Make-Korea-Kittens-Again
+> Forked from Make-America-Kitten-Again
 
-This is the code for my Chrome extension:
+대한민국의 20대 대통령이 될 윤 당선인은 대한민국의 빛이 되실 분입니다. 그 존엄한 모습의 빛을 직접 영접하기에 아직 부족한 열성 지지자들을 위하여 만들었습니다.
 
-https://chrome.google.com/webstore/detail/make-america-kittens-agai/klchnmggepghlcolikgaekpibclpmgcm
+최신의 고오급 기술을 활용하여 웹브라우저의 이미지 중 윤 당선인의 얼굴인지 판단합니다. 이후 윤 당선인의 얼굴로 판단된 이미지는 부족한 열성 지지자들을 위해 매우 안타까운 마음으로 고양이 사진으로 대체됩니다. 앞으로 더더욱 노오력 하여 직접 영접할 수 있는 열성 지지자가 되도록 합시다.    
 
-.. that replaces images of Donald Trump with kittens.
+## 트위터 웹 예시
+![](video.gif)
 
-@tomroyal
+## 주의
+- 웹브라우저 매우 느려집니다.
+- 인식이 매우 느립니다.
+- 완벽하지 않습니다.
+- 마스크 쓰면 인식 못합니다.
+
+originally by @tomroyal
 tomroyal.com
